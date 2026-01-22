@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KẾ HOẠCH 7 NĂM TỚI - Tiến Dũng</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --accent: #e74c3c;
+      --light: #ecf0f1;
+      --dark: #1a252f;
+      --gradient: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--gradient);
+      color: var(--light);
+      min-height: 100vh;
+      padding: 40px 20px;
+      line-height: 1.7;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.8rem;
+      color: white;
+      margin-bottom: 12px;
+      letter-spacing: 2px;
+      text-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    }
+
+    .subtitle {
+      font-size: 1.3rem;
+      opacity: 0.9;
+      margin-bottom: 20px;
+    }
+
+    #clock {
+      font-size: 1.4rem;
+      font-weight: 500;
+      background: rgba(255,255,255,0.1);
+      padding: 12px 28px;
+      border-radius: 50px;
+      display: inline-block;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    details {
+      margin-bottom: 20px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 16px;
+      overflow: hidden;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.12);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+      transition: all 0.4s ease;
+    }
+
+    details:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 48px rgba(0,0,0,0.35);
+    }
+
+    summary {
+      padding: 24px 32px;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: white;
+      cursor: pointer;
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: linear-gradient(90deg, rgba(231,76,60,0.25) 0%, transparent 100%);
+      transition: background 0.4s ease;
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary::before {
+      content: "▶";
+      font-size: 1.1rem;
+      transition: transform 0.3s ease;
+      opacity: 0.7;
+    }
+
+    details[open] summary::before {
+      transform: rotate(90deg);
+    }
+
+    details[open] summary {
+      background: linear-gradient(90deg, rgba(231,76,60,0.45) 0%, transparent 100%);
+    }
+
+    .content {
+      padding: 0 32px 32px;
+      color: #dfe6e9;
+      font-size: 1.05rem;
+    }
+
+    .deadline {
+      margin-top: 20px;
+      padding: 12px 20px;
+      background: rgba(231,76,60,0.2);
+      border-left: 4px solid var(--accent);
+      border-radius: 8px;
+      font-weight: 500;
+      color: #ffcccc;
+    }
+
+    .emoji {
+      font-size: 2rem;
+      line-height: 1;
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2.8rem; }
+      summary { font-size: 1.25rem; padding: 20px 24px; }
+      .content { padding: 0 24px 24px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>KẾ HOẠCH 7 NĂM TỚI</h1>
+    <div class="subtitle">Tiến Dũng • 2026 – 2033</div>
+    <div id="clock">Today is: </div>
+  </header>
+
+  <main>
+    <details>
+      <summary><span class="emoji">🥟</span> Open a dimsum shop</summary>
+      <div class="content">
+        <p>Không nhất thiết là một cái quán to như Gia Hảo, một xe nhỏ hoặc shop mặt tiền nhỏ như cơm gà Lê Trang là được.</p>
+        <p>Sẽ cần nghiên cứu cách làm, cách nấu sao cho mềm, vị phù hợp, menu đơn giản cốt lõi, thuê mướn mặt bằng nhân viên ra sao để có lãi</p>
+        <div class="deadline"><strong>Deadline:</strong> ~sau 2028 (sau khi đạt một số mục tiêu khác trước)</div>
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="emoji">🇬🇧</span> Open an English center</summary>
+      <div class="content">
+        <p>Bắt đầu từ căn phòng nhỏ mẹ cho ở coi như là mặt bằng để kinh doanh.</p>
+        <p>Sau đó đăng ký kinh doanh, rồi mới cho các bạn về dạy học. Sau đó dần mới nghĩ tới làm trung tâm lớn hơn.</p>
+        <p><strong>Lý do:</strong> có ứng dụng CNTT để dạy học, kiểm tra thường xuyên → người ta chọn trung tâm của mình thay vì các trung tâm khác.</p>
+        <p>Tham khảo: Isee, Kidsup</p>
+        <div class="deadline"><strong>Deadline:</strong> 2026 (đã đăng ký kinh doanh + có lớp học đầu tiên trên 3 học sinh + khai thuế đầy đủ)</div>
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="emoji">🌍</span> Open other languages center & study abroad counseling center</summary>
+      <div class="content">
+        <p>Tận dụng việc biết nhiều ngoại ngữ để phục vụ nhu cầu học tập ngoại ngữ khác.</p>
+        <p>Tư vấn du học và việc làm.</p>
+        <p>Tham khảo: INMEKO</p>
+        <div class="deadline"><strong>Deadline:</strong> ~2027 (cần vững vàng kinh doanh & nghiên cứu trước)</div>
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="emoji">🚗</span> Buy a Kia Morning</summary>
+      <div class="content">
+        <p>Một chiếc xe giờ là 350 triệu mua mới.</p>
+        <p>Mục đích: để phông bạt, đi qua nhà vợ thì nhà vợ nể, sau này có con cái thì là bệ phóng cho con cái.</p>
+        <p>Nhược điểm: sẽ tốn tiền nuôi nếu không đem lại giá trị tài chính (có thể cải thiện nếu dùng để di chuyển đến các địa điểm kinh doanh).</p>
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="emoji">💍</span> Get married (maybe with Phúc Hảo)</summary>
+      <div class="content">
+        <p>Chuẩn bị tươi 500 triệu.</p>
+        <p>Đãi nhà hàng, lấy lại 1 phòng, sửa cái phòng để thông qua lại.</p>
+        <p>Khó khăn: trong thời gian ngắn cần kiếm được số tiền lớn (so với hiện tại), có thể có áp lực, bố mẹ thì hơi dửng dưng.</p>
+        <div class="deadline"><strong>Deadline:</strong> ~2027</div>
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="emoji">💪</span> Have 6 packs</summary>
+      <div class="content">
+        <p>Hiện tại chiếu dưới đèn cũng đã có 6 múi rồi, việc tiếp theo là duy trì và thoải mái.</p>
+        <p>Dành thời gian xấp xỉ 1 tiếng mỗi ngày (trừ chủ nhật) để rèn luyện (Gym ~40 phút, Abs roller 15 phút).</p>
+        <p>Cần uống: 1 muỗng creatine, 1.5 muỗng đạm.</p>
+        <p>Deadline: không có, cứ duy trì, lâu lâu chụp hình khoe Facebook.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="emoji">🎤</span> Famous Rapper / Content Creator</summary>
+      <div class="content">
+        <p>Muốn được như Đen Vâu, nổi tiếng.</p>
+        <p>Để kinh doanh ngoại ngữ cho dễ.</p>
+        <p>Nhờ AI làm nhạc, rồi tự soạn Lyric, trong cả trăm bài mong sẽ có 1 bài hit.</p>
+        <p>Deadline: đường dài, không có deadline cụ thể.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="emoji">🏠</span> Rebuild the recent house</summary>
+      <div class="content">
+        <p>Đợi xem bác có cho mảnh đất không, thì xây cất lại chỗ nhà sàn của bố mẹ.</p>
+        <p>Lần này phải xin thổ cư, giấy phép xây dựng đàng hoàng, không giống bố làm được.</p>
+        <p>Chi phí vào khoảng 1 tỷ chứ không ít, cần cân nhắc rất nhiều.</p>
+        <div class="deadline"><strong>Deadline:</strong> >2030 (cứ để ý tưởng trong đầu)</div>
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="emoji">🏡</span> Buy a new house</summary>
+      <div class="content">
+        <p>Phòng trường hợp đẻ 2 đứa con trai (nhưng trời cho nhiêu thì xin lấy nhiêu).</p>
+        <p>Thì 2 cái nhà cho 2 đứa là chuyện nên tính trước.</p>
+        <p>2 tỷ tươi rồi tính tiếp.</p>
+        <p>Deadline: còn mơ hồ, cần phải đẻ trước rồi tính tiếp.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="emoji">👨‍🏫</span> Teaching in a University / High education / High school</summary>
+      <div class="content">
+        <p>Một công việc ổn định trong một trường học.</p>
+        <p>Ưu tiên: ĐH Cần Thơ, ĐH Y dược, ĐH công nghệ kỹ thuật → rồi đến các cao đẳng Cần Thơ → High school nếu khó.</p>
+        <p>Lý do chọn trường công: cảm giác ổn định hơn, thuận lợi cho các công tác về sau.</p>
+        <p>Deadline: thường xuyên lên mạng check vị trí tuyển dụng và apply.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="emoji">🎓</span> PhD in Singapore</summary>
+      <div class="content">
+        <p>Là mục tiêu ở mức khó đến cực kỳ khó, ảnh hưởng nhiều thứ.</p>
+        <p>Nhắm đến học bổng toàn phần 100%.</p>
+        <p>Thời gian bỏ ra tính bằng năm, rất dài, xa gia đình, xa Việt Nam.</p>
+        <p>Cần có nhiều bài báo khoa học, rất nhiều chất xám.</p>
+        <p>Có thể uyển chuyển thành PhD online hoặc ở nước nào khác, chỉ cần thời gian ngắn đến nước sở tại.</p>
+        <p>Deadline: theo dõi các kênh FB chia sẻ du học và thử apply (cần rất nhiều công sức).</p>
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="emoji">✈️</span> Go to Japan / Korea / Thailand / China</summary>
+      <div class="content">
+        <p>Mục đích: làm đẹp CV, có cái để trình bày cho học sinh, và phông bạt.</p>
+        <p>Combo 4 nước, nếu đi du lịch thì khoảng hơn 50 triệu (Hàn + Nhật đắt nhất).</p>
+        <p>Có thể đi theo dạng hợp tác, học bổng.</p>
+        <div class="deadline"><strong>Deadline:</strong> trải dài 2026 – 2031</div>
+      </div>
+    </details>
+  </main>
+
+  <script>
+    function updateClock() {
+      const now = new Date();
+      const options = {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false
+      };
+      document.getElementById('clock').textContent = 
+        'Today is: ' + now.toLocaleString('vi-VN', options);
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+  </script>
+</body>
+</html>
